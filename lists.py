@@ -65,6 +65,45 @@ def tupleCount(tuple,num):
 def tupleIndex(tuple,num):
 	print(str(tuple.index(num)))
 
+def tupleLoopOdd(tuple):
+	for x in tuple:
+		if x % 2 != 0:
+			print(x, end=" ")
+	print()
+
+def tupleLoopEven(tuple):
+	for x in tuple:
+		if x % 2 == 0:
+			print(x, end=" ")
+	print()
+
+def tupleFindMultiple(num):
+	tuplenum = list()
+	for x in range(1,5,1):
+		num = num*x
+		tuplenum.append(num)
+	print(tuplenum)
+
+def tupleFindStringLength(tuple, length):
+	for x in tuple:
+		if len(x) == length:
+			print(x, end=" ")
+	print()
+
+def tupleAddOdd(tuple):
+	result = 0
+	for x in tuple:
+		if x % 2 != 0:
+			result+=x
+	print(result)
+
+def tupleAddEven(tuple):
+	result = 0
+	for x in tuple:
+		if x % 2 == 0:
+			result+=x
+	print(result)
+
 listAdd(list((1,4,8,12,16)),18)
 listRemove(list((1,4,8,12,16)),16)
 listInsert(list((1,2,3,4,5,6)),15,4)
@@ -77,3 +116,10 @@ listString(list(("Hi", 5,"Hello","World")))
 listBool(list((True, "Yeaahh",False)))
 tupleCount(tuple((1,1,1,2,3,4,4,5)),1)
 tupleIndex(tuple((1,2,3,4,5)),5)
+tupleLoopOdd(tuple((1,2,3,4,5,6,7)))
+tupleLoopEven(tuple((1,2,3,4,5,6,7)))
+tupleFindStringLength(tuple(("Hello","Hi","My name is","Pi")),2)
+tupleAddOdd(tuple((1,2,3,4,5,6,7)))
+tupleAddEven(tuple((1,2,3,4,5,6,7)))
+
+
