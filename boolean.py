@@ -10,6 +10,12 @@ def boolGreater(a,b):
 	else:
 		print(False)
 
+def boolEqual(a,b):
+	if a == b:
+		print(True)
+	else:
+		print(False)
+
 def boolInt(num):
 	if str(type(num)) == "<class 'int'>":
 		print("Int: "+str(True))
@@ -135,9 +141,9 @@ def boolemailVerify(email):
 
 
 
-
 boolLess(2,4)
 boolGreater(2,4)
+boolEqual(2,2)
 boolInt(45)
 boolFloat(3.5)
 boolStr("Hi")
