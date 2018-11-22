@@ -1,41 +1,41 @@
-def boolLess(a,b):
+def bool_Less(a,b):
 	if a < b:
 		print(True)
 	else:
 		print(False)
 
-def boolGreater(a,b):
+def bool_Greater(a,b):
 	if a > b:
 		print(True)
 	else:
 		print(False)
 
-def boolEqual(a,b):
+def bool_Equal(a,b):
 	if a == b:
 		print(True)
 	else:
 		print(False)
 
-def boolInt(num):
+def bool_Int(num):
 	if str(type(num)) == "<class 'int'>":
 		print("Int: "+str(True))
 
 	else:
 		print("Int: "+str(False))
 
-def boolFloat(num):
+def bool_Float(num):
 	if str(type(num)) == "<class 'float'>":
 		print("Float: "+str(True))
 	else:
 		print("Float: "+str(False)) 
 
-def boolStr(string):
+def bool_Str(string):
 	if str(type(string)) == "<class 'str'>":
 		print("Str: "+str(True))
 	else:
 		print("Str: "+str(False)) 
 
-def boolVerify(bool):
+def bool_Verify(bool):
 	if str(type(bool)) == "<class 'str'>":
 		print("Bool: "+str(False))
 
@@ -44,32 +44,32 @@ def boolVerify(bool):
 	else:
 		print("Bool: "+str(False)) 
 
-def boolListVerify(list):
+def bool_List_Verify(list):
 	if str(type(list)) == "<class 'list'>":
 		print("List: "+str(True))
 	else:
 		print("List: "+str(False)) 
 
-def boolSetVerify(set):
+def bool_Set_Verify(set):
 	if str(type(set)) == "<class 'set'>":
 		print("Set: "+str(True))
 	else:
 		print("Set: "+str(False)) 
 
-def boolTupleVerify(tuple):
+def bool_Tuple_Verify(tuple):
 	if str(type(tuple)) == "<class 'tuple'>":
 		print("Tuple: "+str(True))
 	else:
 		print("Tuple: "+str(False)) 
 
 
-def boolDictionaryVerify(dictionary):
+def bool_Dictionary_Verify(dictionary):
 	if str(type(dictionary)) == "<class 'dictionary'>":
 		print("Dictionary: "+str(True))
 	else:
 		print("Dictionary: "+str(False)) 
 
-def boolIntList(list):
+def bool_Int_List(list):
 	result = True
 	for x in list:
 		if str(x) != "<class 'int'>":
@@ -77,7 +77,7 @@ def boolIntList(list):
 			break
 	print("List Pure Int: "+str(result))
 
-def boolFloatList(list):
+def bool_Float_List(list):
 	result = True
 	for x in list:
 		if str(x) != "<class 'float'>":
@@ -85,7 +85,7 @@ def boolFloatList(list):
 			break
 	print("List Pure Float: "+str(result))
 
-def boolStrList(list):
+def bool_Str_List(list):
 	result = True
 	for x in list:
 		if str(x) != "<class 'str'>":
@@ -93,19 +93,19 @@ def boolStrList(list):
 			break
 	print("List Pure Str: "+str(result))
 
-def boolOdd(num):
+def bool_Odd(num):
 	if num % 2 != 0:
 		print("Odd:"+str(True))
 	else:
 		print("Odd:"+str(False))
 
-def boolEven(num):
+def bool_Even(num):
 	if num % 2 == 0:
 		print("Even"+str(True))
 	else:
 		print("Even"+str(False))
 
-def boolRightTriangle(opposite,adjacent,hypotenuse):
+def bool_Right_Triangle(opposite,adjacent,hypotenuse):
 	hypotenuse = hypotenuse **2
 	legs = (opposite ** 2) + (adjacent ** 2)
 	if legs == hypotenuse:
@@ -113,7 +113,7 @@ def boolRightTriangle(opposite,adjacent,hypotenuse):
 	else:
 		print("Right Triangle: "+str(False))
 	
-def boolAcuteTriangle(opposite,adjacent,hypotenuse):
+def bool_Acute_Triangle(opposite,adjacent,hypotenuse):
 	hypotenuse = hypotenuse **2
 	legs = (opposite ** 2) + (adjacent ** 2)
 	if legs > hypotenuse:
@@ -121,7 +121,7 @@ def boolAcuteTriangle(opposite,adjacent,hypotenuse):
 	else:
 		print("Acute Triangle: "+str(False))
 
-def boolObtuseTriangle(opposite,adjacent,hypotenuse):
+def bool_Obtuse_Triangle(opposite,adjacent,hypotenuse):
 	hypotenuse = hypotenuse **2
 	legs = (opposite ** 2) + (adjacent ** 2)
 	if legs < hypotenuse:
@@ -129,7 +129,7 @@ def boolObtuseTriangle(opposite,adjacent,hypotenuse):
 	else:
 		print("Obtuse Triangle: "+str(False))
 
-def boolemailVerify(email):
+def bool_email_Verify(email):
 
 	if str(".com") in email and str("@gmail") in email and str("@yahoo.com"):
 		if str(" ") in email:
@@ -141,23 +141,23 @@ def boolemailVerify(email):
 
 
 
-boolLess(2,4)
-boolGreater(2,4)
-boolEqual(2,2)
-boolInt(45)
-boolFloat(3.5)
-boolStr("Hi")
-boolVerify(True)
-boolListVerify(tuple((1,2,3,4,5)))
-boolTupleVerify(tuple((1,2,3,4,5)))
-boolSetVerify(set((1,2,3,4,5)))
-boolDictionaryVerify(dict(num1= 2,num2=3))
-boolIntList(list((1,2.3,2)))
-boolFloatList(list((1.2,5,4.5,45)))
-boolStrList(list(("Hello", 0,"Hi")))
-boolOdd(3)
-boolEven(5)
-boolRightTriangle(3,4,5)
-boolAcuteTriangle(5,6,10)
-boolObtuseTriangle(5,10,14)
-boolemailVerify("doradomiguel35@gmail.com")
+bool_Less(2,4)
+bool_Greater(2,4)
+bool_Equal(2,2)
+bool_Int(45)
+bool_Float(3.5)
+bool_Str("Hi")
+bool_Verify(True)
+bool_List_Verify(tuple((1,2,3,4,5)))
+bool_Tuple_Verify(tuple((1,2,3,4,5)))
+bool_Set_Verify(set((1,2,3,4,5)))
+bool_Dictionary_Verify(dict(num1= 2,num2=3))
+bool_Int_List(list((1,2.3,2)))
+bool_Float_List(list((1.2,5,4.5,45)))
+bool_Str_List(list(("Hello", 0,"Hi")))
+bool_Odd(3)
+bool_Even(5)
+bool_Right_Triangle(3,4,5)
+bool_Acute_Triangle(5,6,10)
+bool_Obtuse_Triangle(5,10,14)
+bool_email_Verify("doradomiguel35@gmail.com")
