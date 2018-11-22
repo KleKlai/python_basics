@@ -1,73 +1,73 @@
 def bool_Less(a,b):
 	if a < b:
-		print(True)
+		return True 
 	else:
-		print(False)
+		return False
 
 def bool_Greater(a,b):
 	if a > b:
-		print(True)
+		return True
 	else:
-		print(False)
+		return False
 
 def bool_Equal(a,b):
 	if a == b:
-		print(True)
+		return True
 	else:
-		print(False)
+		return False
 
 def bool_Int(num):
 	if str(type(num)) == "<class 'int'>":
-		print("Int: "+str(True))
+		return str("Int: "+str(True))
 
 	else:
-		print("Int: "+str(False))
+		return str("Int: "+str(False))
 
 def bool_Float(num):
 	if str(type(num)) == "<class 'float'>":
-		print("Float: "+str(True))
+		return str("Float: "+str(True))
 	else:
-		print("Float: "+str(False)) 
+		return str("Float: "+str(False)) 
 
 def bool_Str(string):
 	if str(type(string)) == "<class 'str'>":
-		print("Str: "+str(True))
+		return str("Str: "+str(True))
 	else:
-		print("Str: "+str(False)) 
+		return str("Str: "+str(False)) 
 
 def bool_Verify(bool):
 	if str(type(bool)) == "<class 'str'>":
-		print("Bool: "+str(False))
+		return str("Bool: "+str(False))
 
 	elif str(type(bool)) == "<class 'bool'>":
-		print("Bool: "+str(True))
+		return str("Bool: "+str(True))
 	else:
-		print("Bool: "+str(False)) 
+		return str("Bool: "+str(False)) 
 
 def bool_List_Verify(list):
 	if str(type(list)) == "<class 'list'>":
-		print("List: "+str(True))
+		return str("List: "+str(True))
 	else:
-		print("List: "+str(False)) 
+		return str("List: "+str(False)) 
 
 def bool_Set_Verify(set):
 	if str(type(set)) == "<class 'set'>":
-		print("Set: "+str(True))
+		return str("Set: "+str(True))
 	else:
-		print("Set: "+str(False)) 
+		return str("Set: "+str(False)) 
 
 def bool_Tuple_Verify(tuple):
 	if str(type(tuple)) == "<class 'tuple'>":
-		print("Tuple: "+str(True))
+		return str("Tuple: "+str(True))
 	else:
-		print("Tuple: "+str(False)) 
+		return str("Tuple: "+str(False)) 
 
 
 def bool_Dictionary_Verify(dictionary):
 	if str(type(dictionary)) == "<class 'dictionary'>":
-		print("Dictionary: "+str(True))
+		return str("Dictionary: "+str(True))
 	else:
-		print("Dictionary: "+str(False)) 
+		return str("Dictionary: "+str(False)) 
 
 def bool_Int_List(list):
 	result = True
@@ -75,7 +75,7 @@ def bool_Int_List(list):
 		if str(x) != "<class 'int'>":
 			result = False
 			break
-	print("List Pure Int: "+str(result))
+	return str("List Pure Int: "+str(result))
 
 def bool_Float_List(list):
 	result = True
@@ -83,7 +83,7 @@ def bool_Float_List(list):
 		if str(x) != "<class 'float'>":
 			result = False
 			break
-	print("List Pure Float: "+str(result))
+	return str("List Pure Float: "+str(result))
 
 def bool_Str_List(list):
 	result = True
@@ -91,73 +91,73 @@ def bool_Str_List(list):
 		if str(x) != "<class 'str'>":
 			result = False
 			break
-	print("List Pure Str: "+str(result))
+	return str("List Pure Str: "+str(result))
 
 def bool_Odd(num):
 	if num % 2 != 0:
-		print("Odd:"+str(True))
+		return str("Odd:"+str(True))
 	else:
-		print("Odd:"+str(False))
+		return str("Odd:"+str(False))
 
 def bool_Even(num):
 	if num % 2 == 0:
-		print("Even"+str(True))
+		return str("Even"+str(True))
 	else:
-		print("Even"+str(False))
+		return str("Even"+str(False))
 
 def bool_Right_Triangle(opposite,adjacent,hypotenuse):
 	hypotenuse = hypotenuse **2
 	legs = (opposite ** 2) + (adjacent ** 2)
 	if legs == hypotenuse:
-		print("Right Triangle: "+str(True))
+		return str("Right Triangle: "+str(True))
 	else:
-		print("Right Triangle: "+str(False))
+		return str("Right Triangle: "+str(False))
 	
 def bool_Acute_Triangle(opposite,adjacent,hypotenuse):
 	hypotenuse = hypotenuse **2
 	legs = (opposite ** 2) + (adjacent ** 2)
 	if legs > hypotenuse:
-		print("Acute Triangle: "+str(True))
+		return str("Acute Triangle: "+str(True))
 	else:
-		print("Acute Triangle: "+str(False))
+		return str("Acute Triangle: "+str(False))
 
 def bool_Obtuse_Triangle(opposite,adjacent,hypotenuse):
 	hypotenuse = hypotenuse **2
 	legs = (opposite ** 2) + (adjacent ** 2)
 	if legs < hypotenuse:
-		print("Obtuse Triangle: "+str(True))
+		return str("Obtuse Triangle: "+str(True))
 	else:
-		print("Obtuse Triangle: "+str(False))
+		return str("Obtuse Triangle: "+str(False))
 
 def bool_email_Verify(email):
 
 	if str(".com") in email and str("@gmail") in email and str("@yahoo.com"):
 		if str(" ") in email:
-			print("Email Valid: "+str(False))
+			return str("Email Valid: "+str(False))
 		else:
-			print("Email Valid: "+str(True))
+			return str("Email Valid: "+str(True))
 	else:
-		print("Email Valid: "+str(False))
+		return str("Email Valid: "+str(False))
 
 
 
-bool_Less(2,4)
-bool_Greater(2,4)
-bool_Equal(2,2)
-bool_Int(45)
-bool_Float(3.5)
-bool_Str("Hi")
-bool_Verify(True)
-bool_List_Verify(tuple((1,2,3,4,5)))
-bool_Tuple_Verify(tuple((1,2,3,4,5)))
-bool_Set_Verify(set((1,2,3,4,5)))
-bool_Dictionary_Verify(dict(num1= 2,num2=3))
-bool_Int_List(list((1,2.3,2)))
-bool_Float_List(list((1.2,5,4.5,45)))
-bool_Str_List(list(("Hello", 0,"Hi")))
-bool_Odd(3)
-bool_Even(5)
-bool_Right_Triangle(3,4,5)
-bool_Acute_Triangle(5,6,10)
-bool_Obtuse_Triangle(5,10,14)
-bool_email_Verify("doradomiguel35@gmail.com")
+print(bool_Less(2,4))
+print(bool_Greater(2,4))
+print(bool_Equal(2,2))
+print(bool_Int(45))
+print(bool_Float(3.5))
+print(bool_Str("Hi"))
+print(bool_Verify(True))
+print(bool_List_Verify(tuple((1,2,3,4,5))))
+print(bool_Tuple_Verify(tuple((1,2,3,4,5))))
+print(bool_Set_Verify(set((1,2,3,4,5))))
+print(bool_Dictionary_Verify(dict(num1= 2,num2=3)))
+print(bool_Int_List(list((1,2.3,2))))
+print(bool_Float_List(list((1.2,5,4.5,45))))
+print(bool_Str_List(list(("Hello", 0,"Hi"))))
+print(bool_Odd(3))
+print(bool_Even(5))
+print(bool_Right_Triangle(3,4,5))
+print(bool_Acute_Triangle(5,6,10))
+print(bool_Obtuse_Triangle(5,10,14))
+print(bool_email_Verify("doradomiguel35@gmail.com"))
